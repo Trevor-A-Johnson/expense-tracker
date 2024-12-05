@@ -1,0 +1,19 @@
+[ignore]
+.*/node_modules/.*
+.*/build/.*
+.*/dist/.*
+
+[include]
+
+[libs]
+node_modules/react
+
+[options]
+module.name_mapper='^react$' -> '<PROJECT_ROOT>/node_modules/react'
+module.name_mapper='^react-dom$' -> '<PROJECT_ROOT>/node_modules/react-dom'
+module.file_ext=.js
+module.file_ext=.jsx
+
+
+[lints]
+all=warn

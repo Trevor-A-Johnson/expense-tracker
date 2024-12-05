@@ -1,0 +1,24 @@
+{
+    "parser": "@babel/eslint-parser",
+    "parserOptions": {
+      "requireConfigFile": false,
+      "ecmaVersion": 2021,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "plugins": ["flowtype"],
+    "extends": [
+      "eslint:recommended",
+      "plugin:flowtype/recommended"
+    ],
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "rules": {
+      "flowtype/no-types-missing-file-annotation": "error"
+    }
+  }
+  

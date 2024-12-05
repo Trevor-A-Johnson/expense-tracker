@@ -1,7 +1,8 @@
-import React from 'react'
+// @flow
+import React from 'react';
 
-function Header() {
-  return <h2 className='header'>Expense Tracker</h2>;
+function Header(): React$Node {
+  return <h2 className="header">Expense Tracker</h2>;
 }
 
-export default Header
+export default Header;
